@@ -89,11 +89,11 @@ function App() {
             <label htmlFor="length">Length: {length}</label>
           </div>
           <CheckboxInput id={"numberInput"} defaultChecked={numbersAllowed} onChangeFn={setNumbersAllowed} label={"Number"} />
-          <CheckboxInput id={"characterInput"} defaultChecked={charactersAllowed} onChangeFn={setCharactersAllowed} label={"Character"} />
+          <CheckboxInput id={"characterInput"} defaultChecked={charactersAllowed} onChangeFn={setCharactersAllowed} label={"Special Characters"} />
         </div>
         <div className='flex text-sm gap-x-10 justify-evenly'>
-          <Button color={"purple"} onClickFn={copyPasswordToClipboard} label={"Copy"} />
-          <Button color={"orange"} onClickFn={refreshPassword} label={"Refresh"} />
+          <Button className={'focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 m-5'} onClickFn={copyPasswordToClipboard} label={"Copy"} />
+          <Button className={'focus:outline-none text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-900 m-5'} onClickFn={refreshPassword} label={"Refresh"} />
         </div>
       </div>
     </>
